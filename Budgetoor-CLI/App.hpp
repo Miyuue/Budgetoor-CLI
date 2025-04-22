@@ -7,10 +7,11 @@ using namespace std;
 class App
 {
 private:
-    Budget budget;
+    Budget* budget;
 
     string GetUserInput(const string& prompt) const;
-    bool DisplayMenu() const;
+    int ConvertUserInputToInt(const string& input) const;
+    const bool DisplayMenu() const;
 
 public:
     App();
